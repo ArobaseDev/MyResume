@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-icons/font/bootstrap-icons.css'
 //import 'swiper'
 
+import PureCounter from '@srexi/purecounterjs'
 import AOS from 'aos/dist/aos.js'
 import 'aos/dist/aos.css'
 
@@ -15,6 +16,8 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Main from './components/Main'
 import Footer from './components/Footer'
+
+const pure = new PureCounter();
 
 function App() {
  
