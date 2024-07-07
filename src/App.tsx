@@ -18,15 +18,17 @@ import Hero from './components/Hero'
 import Main from './components/Main'
 import Footer from './components/Footer'
 
- new PureCounter();
-
 function App() {
  
   useEffect(() => {
     AOS.init({
       duration: 1000,
     })
-  }, [])
+  }, []);
+
+  useEffect(() => {
+    new PureCounter();
+},[])
 
   return (
     <>

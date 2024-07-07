@@ -1,3 +1,8 @@
+//import ProgressBar from '@ramonak/react-progress-bar'
+import MyProgressBar from './MyProgressBar';
+
+
+
 export default function Skills() {
   return (
     <>
@@ -16,50 +21,53 @@ export default function Skills() {
             <div className="progress">
               <span className="skill">HTML <i className="val">100%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow={100} aria-valuemin="0" aria-valuemax="100"></div>
+                {/* <ProgressBar className="progress-bar"  completed={100}  /> */}
+                <div className="progress-bar">
+                  <MyProgressBar  value={100} aria-label='HTML' />
+                </div>
               </div>
             </div>
 
-            <div className="progress">
+            {/* <div className="progress">
               <span className="skill">CSS <i className="val">90%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <ProgressBar className="progress-bar"  completed="90" ariaValueMin={0}  ariaValueMax="100"/>
               </div>
             </div>
 
             <div className="progress">
               <span className="skill">JavaScript <i className="val">75%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <ProgressBar className="progress-bar"  completed="75" ariaValueMin={0}  ariaValueMax="100"/>
               </div>
-            </div>
+            </div> */}
 
           </div>
 
-          <div className="col-lg-6">
+          {/* <div className="col-lg-6">
 
             <div className="progress">
               <span className="skill">PHP <i className="val">80%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <ProgressBar className="progress-bar"  completed="80" ariaValueMin={0}  ariaValueMax="100"/>
               </div>
             </div>
 
             <div className="progress">
               <span className="skill">WordPress/CMS <i className="val">90%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <ProgressBar className="progress-bar"  completed="90" ariaValueMin={0}  ariaValueMax="100"/>
               </div>
             </div>
 
             <div className="progress">
               <span className="skill">Photoshop <i className="val">55%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <ProgressBar className="progress-bar"  completed="55" ariaValueMin={0}  ariaValueMax="100"/>
               </div>
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 
