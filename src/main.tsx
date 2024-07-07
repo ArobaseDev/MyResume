@@ -6,7 +6,7 @@ import App from './App.tsx'
 import PortfolioDetails from './pages/PortfolioDetails.tsx'
 
 
-import 'swiper/swiper-bundle.css'
+// import 'swiper/css/bundles'
 import './assets/css/style.css'
 import './assets/scss/style.scss'
 

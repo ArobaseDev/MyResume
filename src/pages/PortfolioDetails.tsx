@@ -1,8 +1,36 @@
+import { useEffect } from 'react';
+
 import PortfolioDetails_1 from '../assets/img/portfolio/portfolio-details-1.jpg';
 import PortfolioDetails_2 from '../assets/img/portfolio/portfolio-details-2.jpg';
 import PortfolioDetails_3 from '../assets/img/portfolio/portfolio-details-3.jpg';
 
+import Swiper from 'swiper/bundle';
+
+
+
 export default function PortfolioDetails() {
+
+  useEffect(() => {
+    new Swiper('.swiper',{
+     // Optional parameters
+     loop: true,
+     slidesPerView: 1,
+     autoplay: {
+       delay: 5000,
+       disableOnInteraction: false,
+     },
+     // If we need pagination
+     pagination: {
+       el: '.swiper-pagination',
+     },
+     // Navigation arrows
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+     },
+    })
+   },[])
+
   return (
     <>
      <section id="portfolio-details" className="portfolio-details">

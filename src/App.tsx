@@ -1,7 +1,8 @@
 
 import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-icons/font/bootstrap-icons.css'
-//import 'swiper'
+
+import Swiper from 'swiper/bundle';
 
 
 import PureCounter from '@srexi/purecounterjs'
@@ -29,6 +30,8 @@ function App() {
   useEffect(() => {
     new PureCounter();
 },[])
+
+
 
   return (
     <>
