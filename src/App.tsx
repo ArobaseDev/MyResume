@@ -2,11 +2,11 @@
 import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-icons/font/bootstrap-icons.css'
 
-import Swiper from 'swiper/bundle';
+
 
 
 import PureCounter from '@srexi/purecounterjs'
-import AOS from 'aos/dist/aos.js'
+import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 

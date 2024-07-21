@@ -8,14 +8,24 @@ import imgPortfolio_7 from "../assets/img/portfolio/portfolio-7.jpg";
 import imgPortfolio_8 from "../assets/img/portfolio/portfolio-8.jpg";
 import imgPortfolio_9 from "../assets/img/portfolio/portfolio-9.jpg";
 
-import GLightbox from 'glightbox'
+//import { useEffect } from "react";
+//import GLightbox from 'glightbox'
+
 
 export default function Portfolio() {
 
-  const lightbox = GLightbox({
-    touchNavigation: true,
-    closeButton: true,
-  });
+  // const lightbox = GLightbox({
+  //   touchNavigation: true,
+  //   closeButton: true,
+  // });
+
+  // useEffect(() => {
+
+  //   new GLightbox({
+  //     touchNavigation: true,
+  //     closeButton: true,
+  //   });
+  // },[]
 
   return (
     <>

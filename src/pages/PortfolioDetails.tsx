@@ -5,6 +5,7 @@ import PortfolioDetails_2 from '../assets/img/portfolio/portfolio-details-2.jpg'
 import PortfolioDetails_3 from '../assets/img/portfolio/portfolio-details-3.jpg';
 
 import Swiper from 'swiper/bundle';
+//import GLightbox from 'glightbox';
 
 
 
@@ -30,6 +31,13 @@ export default function PortfolioDetails() {
      },
     })
    },[])
+
+  //  useEffect(() => {
+  //    new GLightbox({
+  //      touchNavigation: true,
+  //      closeButton: true,
+  //    })
+  //  },[]
 
   return (
     <>
