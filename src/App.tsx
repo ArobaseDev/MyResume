@@ -2,9 +2,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-icons/font/bootstrap-icons.css'
 
-
-
-
 import PureCounter from '@srexi/purecounterjs'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -21,6 +18,8 @@ import Footer from './components/Footer'
 
 function App() {
  
+const pure = new PureCounter()
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -28,8 +27,16 @@ function App() {
   }, []);
 
   useEffect(() => {
-    new PureCounter();
-},[])
+    (async () => {
+        // Dynamically load Isotope
+        const PureCounter = (await import('@srexi/purecounterjs')).default;
+
+        pure.current = new PureCounter(); // const pure = new PureCounter();
+    })();
+
+    // cleanup
+    // return () => pure.current?.destroy();
+}, []);
 
 
 
